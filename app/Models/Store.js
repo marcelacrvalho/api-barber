@@ -8,10 +8,6 @@ class Store extends Model {
     employes() {
         return this.hasMany('App/Models/Employe')
     }
-
-    ocuppations() {
-        return this.hasMany('App/Models/Ocuppation')
-    }
 }
 
 module.exports = Store

@@ -1,12 +1,11 @@
 'use strict'
 
-/** @type {typeof import('@adonisjs/lucid/src/Lucid/Model')} */
 const Model = use('Model')
 
 class Ocuppation extends Model {
 
-    store() {
-        return this.belongsTo('App/Models/Store')
+    employe() {
+        return this.belongsTo('App/Models/Employe')
     }
 
     schedules() {

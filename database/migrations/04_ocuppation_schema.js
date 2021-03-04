@@ -7,10 +7,10 @@ class OcuppationSchema extends Schema {
   up () {
     this.create('ocuppations', (table) => {
       table.increments()
-      table.integer('store_id').unsigned().notNullable()
+      table.integer('employe_id').unsigned().notNullable()
       table.string('ocuppation', 35).notNullable()
 
-      table.foreign('store_id').references('id').inTable('stores').onDelete('cascade').onUpdate('cascade')
+      table.foreign('employe_id').references('id').inTable('employes').onDelete('cascade').onUpdate('cascade')
     })
   }
 
